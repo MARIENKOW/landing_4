@@ -3,7 +3,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+html,body{width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -285,11 +285,11 @@ body{
       margin: 0px 0px 30px 0px;
       font-weight: 500;
       line-height: 78px;
-      @include adaptiv-value('font-size',66 ,43 ,3 ,768 ,0);
+      font-size: 66px;
       @media (max-width:768px) {
-         @include adaptiv-value('font-size',133 ,38 ,4 ,320,768 );
-         @include adaptiv-value('line-height',150 ,55 ,4 ,320,768 );
-         @include adaptiv-value('margin-bottom',30 ,20 ,4 ,320,768 );
+         font-size: 50px;
+         line-height: 66px;
+         margin-bottom: 20px;
       }
    }
 
@@ -299,7 +299,7 @@ body{
       text-transform: capitalize;
       line-height: 30px;
       @media (max-width:768px) {
-         @include adaptiv-value('margin-bottom',45 ,30 ,4 ,320,768 );
+         margin: 0px 0px 30px 0px;
       }
    }
 
@@ -379,7 +379,7 @@ body{
 
 @keyframes introAnimations {
    0%{transform: translateY(0);}
-   70%{transform: translateY(-30%);}
+   60%{transform: translateY(-15%);}
    100%{transform: translateY(0);}
    
 }
