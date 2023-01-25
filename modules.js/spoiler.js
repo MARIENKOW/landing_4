@@ -22,6 +22,7 @@ function spoilerClick() {
 }
 function spoilerAdd(element){
    element.nextElementSibling.style.cssText=`height:0px;overflow:hidden;transition:.2s;`
+   element.style.cssText=`cursor:pointer;`
    element.parentElement.classList.remove('_spoilerOpen');
    if(!element.parentElement.classList.contains("_spoilerActive")){
          element.parentElement.classList.add("_spoilerActive");

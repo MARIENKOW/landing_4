@@ -26,6 +26,7 @@ $(document).ready(function () {
 });
 
 spoilerFlex();
+window.addEventListener('resize',spoilerFlex);
 const burger =  document.querySelector('.header__burger')
 burger.addEventListener('click',navigationOpen)
 function navigationOpen(){
