@@ -1,26 +1,34 @@
 $(document).ready(function () {
-      $('.slider__main').slick({
+      $('.buy__slider').slick({
             arrows: true,
-            dots: false,
-            slidesToShow: 3,
+            dots: true,
+            slidesToShow: 5,
             slidesToScroll: 1,
             speed: 500,
             easing: 'ease-in-out',
-            infinite: true,
-            centerMode: true,
+            infinite: false,
             autoplay: true,
             autoplaySpeed: 4000,
             touchTreshold: 5,
-            centerMode: true,
-            focusOnSelect:true,
+            centerMode: false,
+            focusOnSelect:false,
+            prevArrow:$('.buy__prevArrow'),
+            nextArrow:$('.buy__nextArrow'),
             responsive: [
                   {
-                  breakpoint: 768,
+                  breakpoint: 956,
                   settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 3,
                         slidesToScroll: 1,
                   }
-                  }
+                  },
+                  {
+                        breakpoint: 600,
+                        settings: {
+                              slidesToShow: 2,
+                              slidesToScroll: 1,
+                        }
+                        }
             ]
       });
 });

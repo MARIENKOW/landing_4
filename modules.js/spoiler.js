@@ -33,6 +33,7 @@ function spoilerAdd(element){
 function spoilerRemove(element){
    element.parentElement.classList.remove('_spoilerOpen');
    element.nextElementSibling.style.cssText=``
+   element.style.cssText=``
    element.parentElement.classList.remove("_spoilerActive");
    element.classList.remove('_spoilerRun')
    element.removeEventListener('click',spoilerClick)
