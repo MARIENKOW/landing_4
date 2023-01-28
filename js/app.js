@@ -31,6 +31,37 @@ $(document).ready(function () {
                         }
             ]
       });
+      $('.review__slider').slick({
+            arrows: true,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            easing: 'ease-in-out',
+            infinite: false,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            touchTreshold: 5,
+            centerMode: false,
+            focusOnSelect:false,
+            asNavFor:$('.review__wrapper'),
+      });
+      $('.review__wrapper').slick({
+            fade:true,
+            arrows: false,
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            easing: 'ease-in-out',
+            infinite: false,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            touchTreshold: 5,
+            centerMode: false,
+            focusOnSelect:false,
+            asNavFor:$('.review__slider'),
+      });
 });
 
 
